@@ -1,28 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+// This functional component will manage 2 states but within a single object that will be stored in a single state object. The only way to update the state and still retain both the state elements is to update the state together in a single onClickHandler.
+const App = () => {
+  return(
+    <div>
+      <p>Hello world</p>
+    </div>
+  );
 }
 
 export default App;
