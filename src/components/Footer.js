@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <p>
       <span>Show: </span>
-      <button><FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink></button>
+      <FilterLink filter={VisibilityFilters.SHOW_ALL}><button>All</button></FilterLink>
       {' '}
-      <button><FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink></button>
+      <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}><button>Active</button></FilterLink>
       {' '}
-      <button><FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLink></button>
+      <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}><button>Completed</button></FilterLink>
     </p>
   )
 }

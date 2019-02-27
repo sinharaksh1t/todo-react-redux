@@ -24,4 +24,8 @@ const AddTodo = ({ dispatch }) => {
   );
 }
 
+// const mapDispatchToProps = dispatch => ({
+//   dispatchOnSubmit: input => dispatch(addTodo(input.value))
+// })
+
 export default connect()(AddTodo);
